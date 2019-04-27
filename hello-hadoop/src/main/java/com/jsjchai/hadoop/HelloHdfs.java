@@ -20,8 +20,7 @@ public class HelloHdfs {
         try {
             /*设置URL支持hdfs协议*/
             URL.setURLStreamHandlerFactory(new FsUrlStreamHandlerFactory());
-
-            URL url = new URL("hdfs://master:9000/README.txt");
+            URL url = new URL("hdfs://master:9000/test/hello.txt");
             in = url.openStream();
             IOUtils.copy(in, System.out);
         } catch (IOException e) {
