@@ -26,7 +26,14 @@ public class HelloHdfs {
         } catch (IOException e) {
             e.printStackTrace();
         }finally {
-            IOUtils.closeQuietly(in);
+            if(in != null){
+                try {
+                    in.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
         }
 
     }
