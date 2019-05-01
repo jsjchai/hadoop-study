@@ -1,2 +1,3 @@
 # hadoop-study
-hadoop init
+* hadoop hdfs
+* mapreduce
