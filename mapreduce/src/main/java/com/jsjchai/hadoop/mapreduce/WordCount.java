@@ -32,7 +32,7 @@ public class WordCount {
 
     /**
      *  运行调度任务
-     * @param conf
+     * @param conf hadoop配置
      * @param inputPath 输入文件目录
      * @param outputPath 输出文件目录
      * @throws InterruptedException

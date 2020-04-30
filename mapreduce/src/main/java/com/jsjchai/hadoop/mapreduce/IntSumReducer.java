@@ -10,7 +10,11 @@ import org.apache.hadoop.mapreduce.Reducer;
  * @date 2019-05-01 11:07
  **/
 public class IntSumReducer  extends Reducer<Text, IntWritable, Text, IntWritable> {
-    IntWritable result = new IntWritable();
+    private final IntWritable result;
+
+    public IntSumReducer() {
+        result = new IntWritable();
+    }
 
     @Override
     public void reduce(Text	key, Iterable<IntWritable> values, Context context) throws IOException,InterruptedException {

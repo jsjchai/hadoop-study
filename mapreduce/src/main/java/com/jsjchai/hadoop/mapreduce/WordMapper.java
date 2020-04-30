@@ -11,8 +11,13 @@ import org.apache.hadoop.mapreduce.Mapper;
  * @date 2019-04-25 16:06
  **/
 public class WordMapper extends Mapper<Object, Text, Text, IntWritable> {
-    private IntWritable one = new IntWritable(1);
-    private Text word = new Text();
+    private final IntWritable one;
+    private final Text word;
+
+    public WordMapper() {
+        one = new IntWritable(1);
+        word = new Text();
+    }
 
 
     @Override
