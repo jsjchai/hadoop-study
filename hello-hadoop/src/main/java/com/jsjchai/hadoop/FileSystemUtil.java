@@ -14,7 +14,7 @@ public class FileSystemUtil {
     /**
      * 获取hdfs文件系统对象
      * @return FileSystem
-     * @throws IOException
+     * @throws  IOException
      */
     public static FileSystem getFileSystem() throws IOException {
         Configuration conf = new Configuration();
