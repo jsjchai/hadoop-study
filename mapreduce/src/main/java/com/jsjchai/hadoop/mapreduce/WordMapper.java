@@ -7,7 +7,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
 /**
- * @author tianhe
+ * @author jsjchai
  * @date 2019-04-25 16:06
  **/
 public class WordMapper extends Mapper<Object, Text, Text, IntWritable> {
